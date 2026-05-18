@@ -1,0 +1,67 @@
+uploads = []
+
+[[generated]]
+id = "7mvyspKrykWAnmuJjL1EP"
+uri = "file://artifacts/mobile/assets/images/icon.png"
+type = "image"
+title = "brand_icon"
+
+[[generated]]
+id = "DDH_iiqtmV8JWk6mrCV-O"
+uri = "file://artifacts/mobile/assets/images/hero_banner.png"
+type = "image"
+title = "hero_banner"
+
+[[generated]]
+id = "cjD-W6i7HcJYWFJkxRyvP"
+uri = "file://artifacts/mobile/assets/images/product_essence.png"
+type = "image"
+title = "product_essence"
+
+[[generated]]
+id = "mDuP0GtqFm-KwCLTz4D0C"
+uri = "file://artifacts/mobile/assets/images/product_capsules.png"
+type = "image"
+title = "product_capsules"
+
+[[generated]]
+id = "zrfA2DAkPjhiGpE1rzVEu"
+uri = "file://artifacts/mobile/assets/images/product_liver.png"
+type = "image"
+title = "product_liver"
+
+[[generated]]
+id = "UJK566wyJyX9mE_u8DPDX"
+uri = "file://artifacts/mobile/assets/images/vip_card.png"
+type = "image"
+title = "vip_card"
+
+[[generated]]
+id = "pixN-RDR6gMzoLwNA1hg3"
+uri = "file://artifacts/mobile/assets/images/gift_box.png"
+type = "image"
+title = "gift_box"
+
+[[generated]]
+id = "qHCfcx6aDGbpMt17lJa7p"
+uri = "file://artifacts/mobile/assets/images/tea_cup.png"
+type = "image"
+title = "tea_cup"
+
+[[generated]]
+id = "vZedTCOolkG_qkefNXOmM"
+uri = "file://artifacts/mobile/assets/images/product_sachet.png"
+type = "image"
+title = "product_sachet"
+
+[[generated]]
+id = "lwOkbRgBntyrZodyQVtvR"
+uri = "file://artifacts/mobile/assets/images/profile_bg.png"
+type = "image"
+title = "profile_bg"
+
+[[outputs]]
+id = "7sQWfUYQK9V2JZi2tANBw"
+uri = "file://qrcode.png"
+type = "image"
+title = "应用访问二维码"
