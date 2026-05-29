@@ -99,3 +99,10 @@ artifacts/*/dist/
 .cache
 .runtime
 
+# Cloudflare / Wrangler local state
+.wrangler/
+.dev.vars
+
+# Local temporary outputs
+output/
+

@@ -33,6 +33,7 @@ function RootLayoutNav() {
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       <Stack.Screen name="product/[id]" options={SLIDE_SCREEN} />
       <Stack.Screen name="checkout" options={SLIDE_SCREEN} />
+      <Stack.Screen name="order-query" options={SLIDE_SCREEN} />
       <Stack.Screen name="favorites" options={SLIDE_SCREEN} />
       <Stack.Screen name="health-assessment" options={SLIDE_SCREEN} />
       <Stack.Screen name="knowledge" options={SLIDE_SCREEN} />
