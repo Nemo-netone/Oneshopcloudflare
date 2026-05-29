@@ -1,27 +1,16 @@
 {
-  "name": "workspace",
-  "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {
-    "preinstall": "sh -c 'rm -f package-lock.json yarn.lock; case \"$npm_config_user_agent\" in pnpm/*) ;; *) echo \"Use pnpm instead\" >&2; exit 1 ;; esac'",
-    "build": "pnpm run build:all",
-    "build:all": "pnpm run build:mobile && pnpm run build:api && pnpm run build:sandbox",
-    "build:mobile": "pnpm --filter @workspace/mobile run typecheck && pnpm --filter @workspace/mobile run build",
-    "build:api": "pnpm --filter @workspace/api-server run typecheck && pnpm --filter @workspace/api-server run build",
-    "build:sandbox": "pnpm --filter @workspace/mockup-sandbox run typecheck && pnpm --filter @workspace/mockup-sandbox run build",
-    "typecheck:libs": "tsc --build",
-    "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./scripts\" --if-present run typecheck",
-    "typecheck:mobile": "pnpm --filter @workspace/mobile run typecheck",
-    "typecheck:api": "pnpm --filter @workspace/api-server run typecheck",
-    "typecheck:sandbox": "pnpm --filter @workspace/mockup-sandbox run typecheck"
-  },
+  "name": "oneshop-cloudflare-mvp",
+  "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@9.15.9",
+  "scripts": {
+    "dev": "pnpm --filter @workspace/mobile run dev",
+    "build": "pnpm --filter @workspace/mobile run build",
+    "typecheck": "pnpm --filter @workspace/mobile run typecheck"
+  },
   "devDependencies": {
     "pnpm": "^9.15.9",
     "prettier": "^3.8.1",
     "typescript": "~5.9.2"
-  },
-  "dependencies": {
-    "qrcode": "^1.5.4"
   }
 }

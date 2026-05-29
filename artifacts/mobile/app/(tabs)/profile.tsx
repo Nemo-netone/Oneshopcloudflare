@@ -122,8 +122,8 @@ export default function ProfileScreen() {
         >
           <View style={styles.cardHeader}>
             <Text style={[styles.cardTitle, { color: colors.foreground }]}>我的订单</Text>
-            <Pressable style={styles.linkRow}>
-              <Text style={[styles.linkText, { color: colors.mutedForeground }]}>全部订单</Text>
+            <Pressable style={styles.linkRow} onPress={() => router.push("/order-query" as any)}>
+              <Text style={[styles.linkText, { color: colors.mutedForeground }]}>查询订单</Text>
               <Icon name="chevron-right" size={12} color={colors.mutedForeground} />
             </Pressable>
           </View>

@@ -1,11 +1,13 @@
-name = "oneshop-frontend"
-type = "javascript"
-main = "src/index.js"
-compatibility_date = "2024-01-01"
+name = "oneshop-cloudflare-mvp"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = "artifacts/mobile/dist"
 
-# 环境变量
-[env.production]
-vars = { ENVIRONMENT = "production" }
-
-# API 路由代理到后端
-route = {pattern = "/api/*", zone_name = "example.com"}
+# Cloudflare Pages Functions 会通过 DB 绑定访问 D1。
+# 部署前请先创建 D1 数据库，并把 database_id 替换为真实值：
+#   wrangler d1 create oneshop-db
+#   wrangler d1 migrations apply oneshop-db --local
+#   wrangler d1 migrations apply oneshop-db --remote
+[[d1_databases]]
+binding = "DB"
+database_name = "oneshop-db"
+database_id = "替换为你的 Cloudflare D1 database_id"
